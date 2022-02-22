@@ -9,6 +9,7 @@ python = "^3.8"
 colorama = "^0.4.4"
 pylivestream = "^1.11.4"
 python-ffmpeg-video-streaming = "^0.1.15"
+ffmpeg-python = "^0.2.0"
 
 [tool.poetry.dev-dependencies]
 

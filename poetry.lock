@@ -1,0 +1,75 @@
+[[package]]
+name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "ffmpeg-python"
+version = "0.2.0"
+description = "Python bindings for FFmpeg - with complex filtering support"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+future = "*"
+
+[package.extras]
+dev = ["future (==0.17.1)", "numpy (==1.16.4)", "pytest-mock (==1.10.4)", "pytest (==4.6.1)", "Sphinx (==2.1.0)", "tox (==3.12.1)"]
+
+[[package]]
+name = "future"
+version = "0.18.2"
+description = "Clean single-source support for Python 3 and 2"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "pylivestream"
+version = "1.11.4"
+description = "Livestream using FFmpeg to YouTube Live, Periscope, Facebook Live, Twitch, and many more"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.extras]
+captions = ["tinytag"]
+lint = ["flake8", "flake8-bugbear", "flake8-builtins", "flake8-blind-except", "mypy (>=0.800)"]
+tests = ["pytest", "pytest-timeout"]
+
+[[package]]
+name = "python-ffmpeg-video-streaming"
+version = "0.1.15"
+description = "Package media content for online streaming(DASH and HLS) using ffmpeg"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.8"
+content-hash = "146091e0c5092d486ee223e3312afef3b12c8717746eb0d8e51bb42511519997"
+
+[metadata.files]
+colorama = [
+    {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+ffmpeg-python = [
+    {file = "ffmpeg-python-0.2.0.tar.gz", hash = "sha256:65225db34627c578ef0e11c8b1eb528bb35e024752f6f10b78c011f6f64c4127"},
+    {file = "ffmpeg_python-0.2.0-py3-none-any.whl", hash = "sha256:ac441a0404e053f8b6a1113a77c0f452f1cfc62f6344a769475ffdc0f56c23c5"},
+]
+future = [
+    {file = "future-0.18.2.tar.gz", hash = "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"},
+]
+pylivestream = [
+    {file = "pylivestream-1.11.4.tar.gz", hash = "sha256:cb968cb72c9adad3e3c3581f8b3a6228ffa9df091d247445bb41aa97c6e03a40"},
+]
+python-ffmpeg-video-streaming = [
+    {file = "python-ffmpeg-video-streaming-0.1.15.tar.gz", hash = "sha256:505690effd7e37154e39be11e035c47cee11b39e81a7bf16ae57c79b1a0c9520"},
+    {file = "python_ffmpeg_video_streaming-0.1.15-py3-none-any.whl", hash = "sha256:67492c9f5552032a832696a5e14193dd5bb30be5826ed0acc5c7548b8b306a37"},
+]
