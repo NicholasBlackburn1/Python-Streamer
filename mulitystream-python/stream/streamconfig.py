@@ -14,6 +14,7 @@ class streamconfig(object):
     _streamdesc :str
     _streamURL : str
     _streamKey : str
+    _streamInputUrl : str
 
     # intis the stuff
     def __init__(self,streamname : str, desc : str, inputUrl:str, streamurl:str, streamKey: str):
@@ -58,7 +59,7 @@ class streamconfig(object):
             log.Error("Not allowed stream desc to be empty")
             Exception("cannot have a null Stream url")
 
-        self._streamdesc = url
+        self._streamInputUrl = url
 
 
       # this sets the url of the stream
@@ -79,4 +80,22 @@ class streamconfig(object):
 
         self._streamKey = key
         
-    
+    # gets stream name 
+    def getStreamName(self):
+        return self._streamname
+
+    # gets stream desc
+    def getStreamDesc(self):
+        return self._streamdesc
+
+    # gets stream output url
+    def getStreamurl(self):
+        self._streamURL
+
+    # gets stream inout url
+    def getInputURL(self):
+        self._streamInputUrl
+
+
+    def __repr__(self) -> list:
+        return [self._streamname,self._streamdesc, self._streamInputUrl, self._streamURL,self._streamKey]
